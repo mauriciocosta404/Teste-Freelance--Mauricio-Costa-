@@ -1,4 +1,5 @@
 .main {
+  
 }
 .bannerContainer{
   background-color: #323351;
@@ -21,4 +22,8 @@
   gap: 1rem;
   font-size: .9rem;
   font-weight: 400;
+}
+
+.services-card{
+  
 }
