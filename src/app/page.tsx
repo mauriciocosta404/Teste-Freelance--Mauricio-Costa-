@@ -23,7 +23,7 @@ export default function Home() {
         <div>
             {
               MockCardService.map((item,index)=>(
-                <ServicesCard key={index}/>        
+                <ServicesCard key={index} service={item}/>        
               ))
             }
         </div>
