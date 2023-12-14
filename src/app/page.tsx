@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { MockCardService } from '@/mock/MockCardService'
+import { ServicesCard } from '@/components/ServicesCard'
 
 export default function Home() {
   return (
@@ -17,6 +19,14 @@ export default function Home() {
             <li>Contato</li>  
           </ul>   
         </header>
+
+        <div>
+            {
+              MockCardService.map((item,index)=>(
+                <ServicesCard key={index}/>        
+              ))
+            }
+        </div>
       </div>
     </main>
   )
