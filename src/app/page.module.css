@@ -1,5 +1,5 @@
 .main {
-  
+
 }
 .bannerContainer{
   background-color: #323351;
@@ -12,6 +12,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 3rem;
 }
 
@@ -24,6 +25,24 @@
   font-weight: 400;
 }
 
-.services-card{
-  
+.services_card{
+  background-color: #F9F0EE;
+  padding: 3rem;
+  width: 33.33%;
+}
+
+.header_btn{
+  background-color: #444561;
+  padding: 12px 18px 12px 18px;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  display: block;
+  align-items: center;
+}
+
+.header_left{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }

@@ -1,4 +1,5 @@
 import { ServicesType } from "@/types/servicesType"
+import styles from '../../app/page.module.css'
 
 type ServicesProps={
     service:ServicesType;
@@ -6,7 +7,7 @@ type ServicesProps={
 
 export const ServicesCard=({service}:ServicesProps)=>{
     return(
-        <div>
+        <div className={styles.services_card}>
             <h3>{service.title}</h3>
             <div>{service.icon}</div>
             <span>{service.serviceName}</span>
