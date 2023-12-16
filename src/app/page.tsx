@@ -25,7 +25,7 @@ export default function Home() {
           <button className={styles.header_btn}> <CiViewList /> Orçamento</button>
         </header>
 
-        <div>
+        <div className={styles.services_container}>
             {
               MockCardService.map((item,index)=>(
                 <ServicesCard key={index} service={item}/>        

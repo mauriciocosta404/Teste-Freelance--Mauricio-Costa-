@@ -1,5 +1,5 @@
 import { ServicesType } from "@/types/servicesType"
-import styles from '../../app/page.module.css'
+import styles from './style.module.css'
 
 type ServicesProps={
     service:ServicesType;
