@@ -1,0 +1,28 @@
+.card_container{
+  border-radius: .5rem;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.card_container img{
+  width: 100%;
+  max-height: 8rem;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.card_container > div{
+  display: flex;
+  font-size: .8rem;
+  color: #F5643D;
+  justify-content: space-between;
+  padding: .5rem;
+}
+
+.left_side_card{
+  display: flex;
+  flex-direction: column;
+}
+
+.left_side_card > div{
+  color: #A1A1A1;
+  font-size: .5rem;
+}

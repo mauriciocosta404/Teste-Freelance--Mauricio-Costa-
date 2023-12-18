@@ -44,5 +44,16 @@
 }
 .body_container{
   width: 100%;
-  padding: 0 15rem; 
+  padding: 0 12rem; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.section_title{
+  padding: 0 12rem;
+  margin-top: 20rem;
+  margin-bottom: 3rem;
 }

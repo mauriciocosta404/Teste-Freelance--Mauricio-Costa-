@@ -1,8 +1,5 @@
-// mock/MockCardService.ts
 import { icons } from "../components/icons";
 import { ServicesType } from "@/types/servicesType";
-
-type IconType = React.ComponentType<{ size?: number }>;
 
 export const MockCardService: ServicesType[] = [
   {

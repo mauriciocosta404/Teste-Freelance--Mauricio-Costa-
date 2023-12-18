@@ -5,6 +5,7 @@ import { MockCardService } from '@/mock/MockCardService'
 import { ServicesCard } from '@/components/ServicesCard'
 import { CiViewList } from "react-icons/ci";
 import { useApi } from '@/hooks/useFetch'
+import { ProductCards } from '@/components/produtsCard'
 
 export default function Home() {
 
@@ -46,14 +47,18 @@ export default function Home() {
               ))
             }
         </div>
+
       </div>
-      <div className={styles.body_container}>
+
+      <h3 className={styles.section_title}>PRODUTOS</h3>
+
+      <section className={styles.body_container}>
         {
           data?.map((item,index)=>(
-            <div key={index}>{item?.id}</div>
+            <ProductCards key={index} product={item}/>
           ))
         }
-      </div>
+      </section>
     </main>
   )
 }
