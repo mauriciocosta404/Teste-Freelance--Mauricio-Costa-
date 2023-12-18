@@ -112,6 +112,13 @@
     font-weight: 500;
   }
 
+  .mobile_menu h5{
+    margin-top: 3rem;
+    width: 15rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
   .mobile_menu ul{
     margin-top: 1rem;
     list-style-type:none;
@@ -119,5 +126,17 @@
 
   .mobile_menu ul li{
     margin-top: 1.2rem;
+  }
+  .mobile_list_one{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(6rem,1fr));
+    justify-content:center;
+    gap: 2rem;
+    font-size: .9rem;
+  }
+  .mobile_list_one > div{
+    display: flex;
+    gap: .2rem;
   }
 }

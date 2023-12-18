@@ -4,7 +4,9 @@ import styles from './page.module.css'
 import { MockCardService } from '@/mock/MockCardService'
 import { ServicesCard } from '@/components/ServicesCard'
 import { CiViewList } from "react-icons/ci";
-import { FaBars } from 'react-icons/fa'
+import { FaBars,FaThermometerEmpty} from 'react-icons/fa'
+import { Gi3DGlasses } from "react-icons/gi";
+import { IoLogoElectron } from "react-icons/io5";
 import { useApi } from '@/hooks/useFetch'
 import { ProductCards } from '@/components/produtsCard'
 
@@ -64,6 +66,14 @@ export default function Home() {
           </ul>
 
           <h4>Catálogo completo de itens para você</h4>   
+
+          <h5>Laboratório</h5>
+
+          <div className={styles.mobile_list_one}>
+            <div><IoLogoElectron /> <span>Equiamentos</span></div>
+            <div><Gi3DGlasses /> <span>Acessórios</span></div>
+            <div><FaThermometerEmpty/> <span>Termômetros</span></div>
+          </div>
         </div>
 
         <div className={styles.services_container}>
