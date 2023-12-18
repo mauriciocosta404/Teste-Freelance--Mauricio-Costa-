@@ -47,7 +47,7 @@
   padding: 0 12rem; 
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
-  justify-content: space-between;
+  justify-content:center;
   gap: 3rem;
   flex-wrap: wrap;
 }
@@ -56,4 +56,36 @@
   padding: 0 12rem;
   margin-top: 20rem;
   margin-bottom: 3rem;
+}
+
+.menu_bar{
+  display: none;
+}
+
+.mobile_buttons{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mobile_buttons .mobile_list_services{
+  background-color: #F5643D;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu_bar{
+    display: block;
+    color: #fff;
+  }
+  .linkList,.header_btn{
+    display: none;
+  }
+  .bannerContainer{
+    padding: 0 2rem;
+  }
+  .services_container{
+    display: none;
+  }
 }

@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import { MockCardService } from '@/mock/MockCardService'
 import { ServicesCard } from '@/components/ServicesCard'
 import { CiViewList } from "react-icons/ci";
+import { FaBars } from 'react-icons/fa'
 import { useApi } from '@/hooks/useFetch'
 import { ProductCards } from '@/components/produtsCard'
 
@@ -38,7 +39,30 @@ export default function Home() {
           </div>
           
           <button className={styles.header_btn}> <CiViewList /> Orçamento</button>
+          
+          <div className={styles.menu_bar}>
+            <div className={styles.mobile_buttons}>
+              <div className={styles.mobile_list_services}>
+                <CiViewList />
+              </div>
+              <div className={styles.mobile_bars}>
+                <FaBars/>
+              </div>
+            </div>
+          </div>
         </header>
+
+        <div className={styles.mobile_menu}>
+          <h3>Navegue por nosso site</h3> 
+
+          <ul>
+            <li>Início</li>
+            <li>Laudos</li>
+            <li>Sobre nós</li>
+            <li>Certificações</li>
+            <li>Contato</li>
+          </ul>   
+        </div>
 
         <div className={styles.services_container}>
             {
@@ -62,3 +86,4 @@ export default function Home() {
     </main>
   )
 }
+
