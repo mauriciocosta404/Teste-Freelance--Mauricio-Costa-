@@ -68,6 +68,11 @@
   align-items: center;
 }
 
+.mobile_menu{
+  display: none;
+  color: #fff;
+}
+
 .mobile_buttons .mobile_list_services{
   background-color: #F5643D;
   padding: .5rem;
@@ -75,6 +80,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .bannerContainer{
+    height: auto;
+  }
   .menu_bar{
     display: block;
     color: #fff;
@@ -87,5 +95,29 @@
   }
   .services_container{
     display: none;
+  }
+  .mobile_menu{
+    display: block;
+    color: #fff;
+  }
+  .mobile_menu h3{
+    margin-top: 3rem;
+    width: 8rem;
+    font-weight: 400;
+  }
+
+  .mobile_menu h4{
+    margin-top: 3rem;
+    width: 15rem;
+    font-weight: 500;
+  }
+
+  .mobile_menu ul{
+    margin-top: 1rem;
+    list-style-type:none;
+  }
+
+  .mobile_menu ul li{
+    margin-top: 1.2rem;
   }
 }

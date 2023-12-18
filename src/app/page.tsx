@@ -61,7 +61,9 @@ export default function Home() {
             <li>Sobre nós</li>
             <li>Certificações</li>
             <li>Contato</li>
-          </ul>   
+          </ul>
+
+          <h4>Catálogo completo de itens para você</h4>   
         </div>
 
         <div className={styles.services_container}>
