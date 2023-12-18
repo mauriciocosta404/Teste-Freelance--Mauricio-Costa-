@@ -1,5 +1,28 @@
 .services_card{
+    margin-top: 3rem;
     background-color: #F9F0EE;
     padding: 3rem;
     width: 33.33%;
+    height: 23.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #313352;
+  }
+
+  .orange_services_card{
+    background-color: #F5643D;
+    margin-top: 3rem;
+    padding: 3rem;
+    width: 33.33%;
+    height: 25.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  .footer_text{
+    font-size: 1.6rem;
+    
   }

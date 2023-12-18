@@ -7,10 +7,12 @@ type ServicesProps={
 
 export const ServicesCard=({service}:ServicesProps)=>{
     return(
-        <div className={styles.services_card}>
+        <div className={service.second_component?styles.orange_services_card:styles.services_card}>
             <h3>{service.title}</h3>
-            <div>{service.icon}</div>
-            <span>{service.serviceName}</span>
+            <div className={styles.footer_text}>
+                <div>{service.icon}</div>
+                <span>{service.serviceName}</span>
+            </div>
         </div>
     )
 }

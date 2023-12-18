@@ -11,6 +11,7 @@ export const MockCardService:ServicesType[] = [
     {
         title:"QUIMICOS",
         icon:"<FaWineBottle />",
+        second_component:true,
         serviceName:"Materiais Químicos"
     },
     {

@@ -1,10 +1,24 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import { MockCardService } from '@/mock/MockCardService'
 import { ServicesCard } from '@/components/ServicesCard'
 import { CiViewList } from "react-icons/ci";
+import { useApi } from '@/hooks/useFetch'
 
 export default function Home() {
+
+  const { data, loading, error } = useApi();
+
+  
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
+  
+  if (error) {
+    return <p>{error}</p>;
+  }
+
   return (
     <main className={styles.main}>
       <div className={styles.bannerContainer}>
@@ -32,6 +46,13 @@ export default function Home() {
               ))
             }
         </div>
+      </div>
+      <div className={styles.body_container}>
+        {
+          data?.map((item,index)=>(
+            <div key={index}>{item?.id}</div>
+          ))
+        }
       </div>
     </main>
   )
