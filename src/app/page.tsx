@@ -74,6 +74,15 @@ export default function Home() {
             <div><Gi3DGlasses /> <span>Acessórios</span></div>
             <div><FaThermometerEmpty/> <span>Termômetros</span></div>
           </div>
+
+          <h5>Utensílios</h5>
+
+          <div className={styles.mobile_list_one}>
+            <div><IoLogoElectron /> <span>Inox e Ferragens</span></div>
+            <div><Gi3DGlasses /> <span>Vidrarias</span></div>
+            <div><FaThermometerEmpty/> <span>Plásticos</span></div>
+            <div><FaThermometerEmpty/> <span>Porcelanas</span></div>
+          </div>
         </div>
 
         <div className={styles.services_container}>
